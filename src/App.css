@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container Card */
+.container {
+  background: #ffffff;
+  width: 500px;
+  max-width: 95%;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Total Section */
+.container h3 {
+  text-align: center;
+  margin: 15px 0;
+  color: #444;
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Form Styling */
+form {
+  margin-bottom: 20px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+/* Add Button */
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #5563c1;
+}
+
+/* Filter Dropdown */
+select {
+  margin-bottom: 10px;
+}
+
+/* Expense Item Card */
+.expense-item {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  border-left: 5px solid #667eea;
+}
+
+.expense-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.expense-item strong {
+  color: #333;
+  font-size: 15px;
+}
+
+.expense-item p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Delete Button */
+.expense-item button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.expense-item button:hover {
+  background: #e60000;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 15px;
+  color: #777;
+  font-style: italic;
+}
